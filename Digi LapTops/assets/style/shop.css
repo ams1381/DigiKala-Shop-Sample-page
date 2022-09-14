@@ -1,0 +1,185 @@
+@font-face {
+    font-family: Vazir;
+    font-style: normal;
+    src: url("/assets/font/Vazir.ttf");
+}
+*
+{
+    margin: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 30px;
+  }
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(77, 77, 77, 0.664);
+  }
+nav
+{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(43, 43, 43);
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+nav ion-icon:first-child
+{
+    font-size: 35px;
+    margin-left: 20px;
+    position: relative;
+}
+nav .added::before
+{
+    content: '1';
+    position: absolute;
+    right: 0px;
+    top: 0;
+    width: 17px;
+    height: 17px;
+    font-size: 11px;
+    font-family: Vazir;
+    font-weight: 600;
+    line-height: 17px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: rgb(255, 0, 0);
+}
+nav h2
+{
+    margin: 0 auto 0 auto;
+    font-family: Vazir;
+}
+.container
+{
+    width: 80%;
+    
+    margin: 40px auto 20px auto;
+
+    padding: 15px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* gap: 5px; */
+}
+.container .productItem
+{
+    width: 100%;
+    height: 504px;
+    position: relative;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    position: relative;
+    cursor: pointer;
+}
+.productItem:nth-child(3)
+{
+    border-top: 1px solid rgb(39, 39, 39);
+}
+.productItem:nth-child(1)
+{
+    border-top: 1px solid rgb(39, 39, 39);
+}
+.productItem:nth-child(1) , .productItem:nth-child(4) , 
+.productItem:nth-child(7) , .productItem:nth-child(10) , 
+.productItem:nth-child(3) , .productItem:nth-child(6) ,
+ .productItem:nth-child(9) , .productItem:nth-child(12)
+{
+    border-bottom: 1px solid rgb(39, 39, 39);
+}
+.productItem:nth-child(2)
+{
+     border: 1px solid rgb(120, 110, 94);
+}
+.productItem:nth-child(5) , .productItem:nth-child(8) , .productItem:nth-child(11)
+{
+    border-bottom: 1px solid rgb(120, 110, 94);
+    border-left: 1px solid rgb(120, 110, 94);
+    border-right: 1px solid rgb(120, 110, 94);
+}
+
+.productItem img
+{
+    width: 280px;
+    height: 280px;
+    margin-top: 25px;
+    border-radius: 8px;
+    position: absolute;
+    top: 15px;
+}
+.des
+{
+    position: absolute;
+    bottom: 5px;
+    padding: 8px;
+}
+.productItem .Title
+{
+    width: 100%;
+    text-align: right;
+    margin-top: 10px;
+    padding-right: 10px;
+    font-family: Vazir;
+}
+.Title p
+{
+    /* height: 50px; */
+    text-overflow: ellipsis;
+}
+.Status
+{
+    margin-top: 20px;
+    width: 100%;
+    height: 20px;
+}
+.Status .Rate
+{
+    float: left;
+    width: 17%;
+    display: flex;
+    padding-left: 10px;
+}
+.Status .Rate ion-icon
+{
+    color: yellow;
+}
+.Status .Rate p
+{
+    margin-left: 7px;
+    font-family: Vazir;
+}
+.Status .SellStatus
+{
+    float: left;
+    width: 83%;
+    font-size: 15px;
+    text-align: right;
+    padding-right: 10px;
+    color: rgb(139, 139, 255);
+    font-family: Vazir;
+}
+.Price 
+{
+    height: 70px;
+    width: 100%;
+    line-height: 50px;
+    font-family: Vazir;
+    text-align: left;
+    position: relative;
+}
+.Price p
+{
+    width: 60%;
+    float: left;
+    position: absolute;
+    left: 35px;
+}

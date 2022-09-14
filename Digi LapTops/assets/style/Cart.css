@@ -1,0 +1,72 @@
+@font-face {
+    font-family: Vazir;
+    font-style: normal;
+    src: url("/assets/font/Vazir.ttf");
+}
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.CartContainer
+{
+    width: 90%;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-family: Vazir;
+    display: flex;
+    flex-direction: column;
+}
+.CarHeader
+{
+    width: 100%;
+    border-bottom: 1px solid rgb(58, 58, 58);
+    text-align: right;
+    padding: 0 5px 5px 0px;
+}
+.CarHeader h3
+{
+    color: red;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.CarHeader h3::before
+{
+    content: '1'; 
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 40%;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    top: 4px;
+    right: 80px;
+}
+.CarHeader h3::after
+{
+    content: '';
+    width: 105px;
+    height: 3.5px;
+    border-radius: 90px;
+    background-color: rgb(212, 0, 0);
+    position: absolute;
+    bottom: 60px;
+    right: 0px;
+}
+.cartProduct
+{
+    width: 100%;
+    text-align: right;
+}
+.cartProduct .cartTitle p
+{
+    font-size: 15px;
+    color: rgb(184, 184, 184);
+}
