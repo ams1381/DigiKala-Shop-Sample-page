@@ -1,0 +1,249 @@
+@font-face {
+    font-family: Vazir;
+    font-style: normal;
+    src: url("/assets/font/Vazir.ttf");
+}
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.container
+{
+    width: 90%;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.productImg , .productDetails
+{
+    float: left;
+}
+/* .productDetails
+{
+    width: 74.5%;
+} */
+.productImg 
+{
+    height: 380px;
+    overflow: hidden;
+}
+.productImg img
+{
+    width: 380px;
+    height: 380px;
+    z-index: 3;
+    cursor: zoom-in;
+}
+.leftSection
+{
+    width: 30%;
+    float: left;
+    font-family: Vazir;
+    border: 1px solid rgb(58, 58, 58);
+    background-color: rgb(39, 39, 39);
+    border-radius: 10px;
+    padding: 10px;
+}
+.price
+{
+    text-align: left;
+    color: rgb(194, 194, 194);
+    margin: 10px 0 10px 5px;
+    font-weight: 600;
+}
+.Garantie
+{
+    display: flex;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(58, 58, 58);
+}
+.Garantie p
+{
+    font-size: 13px;
+    margin-right: 10px;
+}
+.Garantie ion-icon
+{
+    font-size: 25px;
+    color: rgb(59, 107, 59);
+
+}
+.AddToCart
+{
+    width: 100%;
+}
+.AddToCart .Buy
+{
+    width: 100%;
+    background-color: #c70014;
+    font-size: 15px;
+    font-family: Vazir;
+    font-weight: 560;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.leftSection .SaleTitle
+{
+    margin: 10px;
+    border-bottom: 1px solid rgb(58, 58, 58);
+    padding-bottom: 6px;
+}
+.WhareHouseStatus
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    border-bottom: 1px solid rgb(58, 58, 58);
+    padding-bottom: 6px;
+}
+.WhareHouseStatus ion-icon
+{
+    font-size: 25px;
+    color: rgb(129, 129, 255);
+}
+.WhareHouseStatus p
+{
+    margin-right: 5px;
+}
+.leftSection .score
+{
+    display: flex;
+    margin-top: 8px;
+}
+.score ion-icon:first-child
+{
+   font-size: 20px;
+   color: yellow;
+}
+.score ion-icon:last-child
+{
+    font-size: 20px;
+    margin-right: 90px;
+}
+.rightSection
+{
+    width: 65%;
+    float: left;
+    text-align: right;
+    padding-right: 15px;
+    font-family: Vazir;
+}
+.rightSection .Title
+{
+    font-size: 20px;
+}
+.LapTopName
+{
+    display: flex;
+    align-items: center;
+}
+.rightSection .LapTopName .line
+{
+    width: 40%;
+    height: 1px;
+    background-color: rgb(218, 218, 218);
+    z-index: 4;
+}
+.rightSection .LapTopName
+{
+    margin-top: 5px;
+    font-size: 14px;
+    color: rgb(184, 184, 184);
+}
+.rightSection .Rate 
+{
+    display: flex;
+}
+.rightSection .Rate ion-icon
+{
+    color: yellow;
+    margin-right: 5px;
+}
+.rightSection .Suggest
+{
+    color: rgb(163, 163, 163);
+    font-size: 13px;
+}
+.rightSection .Suggest ion-icon
+{
+    color: green;
+    font-size: 14px;
+}
+.productConfig
+{
+    margin: 15px 15px 0 0;
+}
+.productConfig h3
+{
+    color: rgb(217, 218, 219);
+    font-size: 17px;
+    margin-left: 15px;
+}
+.productConfig ul
+{
+    color: rgb(122, 122, 122);
+    margin-bottom: 10px;
+}
+.productConfig ul li
+{
+    margin-top: 10px;
+    display: flex;
+}
+.productConfig ul span
+{
+    color: rgb(231, 231, 231);
+} 
+.productConfig a
+{
+    text-decoration: none;
+    font-weight: 5600;
+    font-size: 16px;
+    /* padding-top: 10px; */
+}
+.productConfig a:hover
+{
+    color: rgb(188, 117, 255);
+}
+.AddedToCart
+{
+    display: none;
+    width: 100%;
+    align-items: center;
+    margin-top: 10px;
+}
+.AddedToCart .numberControl
+{
+    display: flex;
+}
+.numberControl ion-icon
+{
+    font-size: 20px;
+    cursor: pointer;
+}
+.numberControl ion-icon:first-child
+{
+    margin-left: 10px;
+}
+.numberControl ion-icon:last-child
+{
+    margin-right: 10px;
+    color: red;
+}
+.CartStatus
+{
+    margin-right: 10px;
+    color: rgb(163, 163, 163);
+}
+.CartStatus p:last-child
+{
+     color: rgb(157, 157, 245);
+     cursor: pointer;
+}
